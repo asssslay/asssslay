@@ -2,7 +2,7 @@
 
 `🧑‍💻 Young Front-End Developer`
 
-🇺🇦 Hello there! I'm Ibragim, a Front-End Web Developer from Ukraine, Odesa.
+🇺🇦 Hello there! I'm Ruslana, a Front-End Web Developer from Ukraine, Odesa.
 
 🧑‍🎓 Currently, I'm pursuing a degree in computer science, combining structured coursework with self-directed study. Over the past two years, I've embarked on an intensive journey of self-learning programming, fueled by my passion for technology and the drive to acquire practical skills.
 
