@@ -2,20 +2,20 @@
 
 `Young Front-End Developer`
 
-🇺🇦 Hello there! I'm Ruslana, a Front-End Web Developer from Ukraine, Odesa.
+🇺🇦 Hello! I'm Ruslana, a passionate Front-End Web Developer from Odessa, Ukraine. 
 
-Currently, I'm pursuing a degree in computer science, combining structured coursework with self-directed study. Over the past two years, I've embarked on an intensive journey of self-learning programming, fueled by my passion for technology and the drive to acquire practical skills.
+Currently I'm pursuing a degree in Computer Science at university while actively enhancing my web development skills through various courses over the past two years. My expertise lies in designing and developing websites with a keen eye for detail and a perfectionist's touch. 
 
-🤝 I possess a comprehensive skill set essential for a successful employee, including strong communication abilities, teamwork, adept problem-solving skills, adaptability, leadership qualities, effective time management, and critical thinking.
+✨ I'm always eager to take on new challenges and collaborate on exciting projects where my technical skills and ability to connect with people can shine. 
 
-🖥️ Below, you'll find some of the technologies I'm proficient in. For a detailed overview of my skills and projects, please visit my portfolio.
+👩‍💻 Below, you'll find some of the technologies I'm proficient in. For a detailed overview of my skills and projects, please visit my portfolio.
 https://portfolio-avramova.netlify.app/
 
-📱 Feel free to reach out if you have any questions or opportunities for collaboration. Looking forward to connecting! 
+💌 Feel free to reach out to me for potential collaborations or questions. Looking forward to connecting with you!
 
 ---
 
-### 🧰 Languages and Tools
+### 🛠 Languages and Tools
 
 <img align="left" alt="HTML" width="50px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" />
 <img align="left" alt="CSS" width="50px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
