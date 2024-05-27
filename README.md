@@ -2,7 +2,7 @@
 
 `Young Front-End Developer`
 
-🇺🇦 Hello! I'm Ruslana, a passionate Front-End Web Developer from Odessa, Ukraine. 
+🇺🇦 Hello! I'm Ruslana, a passionate Front-End Web Developer from Odesa, Ukraine. 
 
 Currently I'm pursuing a degree in Computer Science at university while actively enhancing my web development skills through various courses over the past two years. My expertise lies in designing and developing websites with a keen eye for detail and a perfectionist's touch. 
 
