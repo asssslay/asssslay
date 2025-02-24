@@ -8,8 +8,8 @@ Currently I'm pursuing a degree in Computer Science at university while actively
 
 ✨ I'm always eager to take on new challenges and collaborate on exciting projects where my technical skills and ability to connect with people can shine. 
 
-👩🏻‍💻 Here are some of the technologies I am proficient in. For a comprehensive look at my skills and projects, please visit my portfolio.
-https://portfolio-avramova.netlify.app/
+👩🏻‍💻 Here are some of the technologies I am proficient in. For a comprehensive look at my skills and projects, please visit my Upwork profile.
+https://www.upwork.com/freelancers/~01c286c87cffa25dbf?mp_source=share
 
 💌 Feel free to reach out to me for potential collaborations or questions. Looking forward to connecting with you!
 
