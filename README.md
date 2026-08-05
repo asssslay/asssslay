@@ -1,12 +1,6 @@
 <div align="center">
 
-<img
-  src="./assets/pixel-kitty.gif"
-  width="220"
-  alt="Animated pixel kitty"
-/>
-
-# Hi, I'm Ruslana! 
+# Hi, I'm Ruslana! 👩🏻‍💻
 
 ### Frontend TypeScript Developer
 
@@ -39,13 +33,10 @@ Creating responsive, interactive and carefully polished web experiences.
 
 ---
 
-## About me 🌷
+## About me 🎀
 
 I’m a frontend developer with a Computer Science degree with honors and over
 two years of experience building modern web interfaces.
-
-I enjoy turning ideas and designs into responsive, interactive products with
-careful attention to details, usability and motion.
 
 - Currently working with **React and TypeScript**
 - Creating responsive websites in **Framer and Webflow**
@@ -54,7 +45,7 @@ careful attention to details, usability and motion.
 
 ---
 
-## Languages and tools 🎀
+## Languages and tools 
 
 <div align="center">
 
@@ -101,7 +92,7 @@ Childcare search and waitlist platform for families and providers.
 
 <div align="center">
 
-### Let’s create something lovely together ♡
+### Feel free to contact me any time! 💌
 
 <a href="https://ruslana-portfolio.vercel.app/">
   <img
@@ -111,11 +102,4 @@ Childcare search and waitlist platform for families and providers.
 </a>
 
 <br /><br />
-
-<img
-  src="./assets/pixel-kitty-footer.gif"
-  width="100"
-  alt="Small animated pixel kitty"
-/>
-
 </div>
