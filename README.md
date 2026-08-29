@@ -1,8 +1,8 @@
 <div align="center">
 
-# Hi, I'm Ruslana! 👩🏻‍💻
+### Hi, I'm Ruslana! 👩🏻‍💻
 
-### Frontend TypeScript Developer
+# Frontend TypeScript Developer
 
 Creating responsive, interactive and carefully polished web experiences.
 
@@ -36,7 +36,7 @@ Creating responsive, interactive and carefully polished web experiences.
 ## About me 🎀
 
 I’m a frontend developer with a Computer Science degree with honors and over
-two years of experience building modern web interfaces.
+three years of experience building modern web interfaces.
 
 - Currently working with **React and TypeScript**
 - Creating responsive websites in **Framer and Webflow**
