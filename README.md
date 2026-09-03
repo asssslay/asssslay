@@ -100,6 +100,4 @@ Childcare search and waitlist platform for families and providers.
     alt="View portfolio"
   />
 </a>
-
-<br /><br />
 </div>
