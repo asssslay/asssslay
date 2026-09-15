@@ -71,6 +71,14 @@ three years of experience building modern web interfaces.
 
 ## Selected projects ✨
 
+### Boogadee
+
+Childcare search and waitlist platform for families and providers.
+
+`React` `TypeScript` `Next.js` `Supabase` `Tailwind CSS` `Leaflet`
+
+[Live website →](https://boogadee.com/)
+
 ### ÉLANE Skin
 
 A premium multi-page Framer template for a fictional skincare brand, featuring
@@ -79,14 +87,6 @@ CMS-powered product pages, responsive layouts, animations and interactive sectio
 `Framer` `CMS` `Responsive Design` `Animation`
 
 [View project →](YOUR_ELANE_LINK)
-
-### Boogadee
-
-Childcare search and waitlist platform for families and providers.
-
-`React` `TypeScript` `Next.js` `Supabase` `Tailwind CSS` `Leaflet`
-
-[Live website →](https://boogadee.com/)
 
 ---
 
