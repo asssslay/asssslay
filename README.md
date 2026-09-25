@@ -6,7 +6,7 @@
 
 Creating responsive, interactive and carefully polished web experiences.
 
-`React` · `TypeScript` · `TanStack Router` · `Framer` · `Webflow`
+`React` · `TypeScript` · `TanStack` · `Framer`
 
 <br />
 
