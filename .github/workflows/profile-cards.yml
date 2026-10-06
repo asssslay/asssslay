@@ -1,0 +1,38 @@
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/profile-cards.yml"
+      - "profile/generate-profile.mjs"
+      - "assets/**"
+
+concurrency:
+  group: profile-cards-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate profile cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node profile/generate-profile.mjs
+
+      - name: Commit profile cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/buttons profile/contrib profile/experience profile/projects profile/stack
+          git commit -m "Update profile cards [skip ci]" || exit 0
+          git push
