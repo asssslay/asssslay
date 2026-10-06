@@ -2,7 +2,7 @@
   <style>text { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }</style>
   <defs>
     <radialGradient id="glow" cx="1" cy="0" r="0.6">
-      <stop offset="0" stop-color="#F4C2D7" stop-opacity="0.14"/>
+      <stop offset="0" stop-color="#F4C2D7" stop-opacity="0.16"/>
       <stop offset="1" stop-color="#F4C2D7" stop-opacity="0"/>
     </radialGradient>
   </defs>

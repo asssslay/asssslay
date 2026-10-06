@@ -9,6 +9,7 @@ Ruslana Avramova · from Ukraine 🇺🇦 · 3+ years of experience
 <a href="https://ruslana-portfolio.vercel.app/"><img src="./profile/buttons/portfolio.svg" alt="Portfolio" /></a>
 <a href="https://www.upwork.com/freelancers/~01c286c87cffa25dbf"><img src="./profile/buttons/upwork.svg" alt="Work with me on Upwork" /></a>
 <img src="./profile/buttons/divider.svg" alt="" />
+<a href="https://wa.me/380970581479"><img src="./profile/buttons/whatsapp.svg" alt="WhatsApp" /></a>
 <a href="https://t.me/asssslay"><img src="./profile/buttons/telegram.svg" alt="Telegram" /></a>
 </p>
 
@@ -17,8 +18,7 @@ Ruslana Avramova · from Ukraine 🇺🇦 · 3+ years of experience
 ## Experience
 
 <p>
-<a href="https://www.upwork.com/freelancers/~01c286c87cffa25dbf"><img src="./profile/experience/upwork.svg" alt="Upwork: Freelance Frontend Developer, Jun 2024 to now" width="49.5%" /></a>
-<img src="./profile/experience/education.svg" alt="Odesa National Polytechnic University: Computer Science degree with honors, 2022 to 2026" width="49.5%" />
+<a href="https://www.upwork.com/freelancers/~01c286c87cffa25dbf"><img src="./profile/experience/upwork.svg" alt="Upwork: Freelance Frontend Developer, Jun 2024 to now" width="50%" /></a><img src="./profile/experience/education.svg" alt="Odesa National Polytechnic University: Computer Science degree with honors, 2022 to 2026" width="50%" />
 </p>
 
 ## Tech Stack
@@ -94,14 +94,13 @@ Ruslana Avramova · from Ukraine 🇺🇦 · 3+ years of experience
 ## Projects
 
 <p>
-<a href="https://boogadee.com/"><img src="./profile/projects/boogadee.svg" alt="Boogadee: childcare search and waitlist platform for families and providers" width="49.5%" /></a>
-<a href="https://github.com/asssslay/kida-ui"><img src="./profile/projects/kida-ui.svg" alt="kida-ui: animation-first UI components, built to reach every stack" width="49.5%" /></a>
+<a href="https://boogadee.com/"><img src="./profile/projects/boogadee.svg" alt="Boogadee: childcare search and waitlist platform for families and providers" width="50%" /></a><a href="https://github.com/asssslay/kida-ui"><img src="./profile/projects/kida-ui.svg" alt="kida-ui: animation-first UI components, built to reach every stack" width="50%" /></a>
 </p>
 
 ## Contributed to
 
 <p>
-<a href="https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/emanuele-web04-synara.svg" alt="Emanuele-web04/synara" width="49.1%" /></a>
+<a href="https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/emanuele-web04-synara.svg" alt="Emanuele-web04/synara" width="49%" /></a>
 </p>
 
 ---

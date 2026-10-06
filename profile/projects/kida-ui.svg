@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="496" height="168" viewBox="0 0 496 168" role="img" aria-label="kida-ui: Animation-first UI components, built to reach every stack: a framework-agnostic motion engine, shared CSS and React components.">
+<svg xmlns="http://www.w3.org/2000/svg" width="506" height="168" viewBox="-10 0 506 168" role="img" aria-label="kida-ui: Animation-first UI components, built to reach every stack: a framework-agnostic motion engine, shared CSS and React components.">
   <style>text { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }</style>
   <defs>
     <radialGradient id="glow" cx="1" cy="0" r="0.75">
       <stop offset="0" stop-color="#F4C2D7" stop-opacity="0.16"/>
       <stop offset="1" stop-color="#F4C2D7" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="logo"><rect x="20" y="20" width="48" height="48" rx="12"/></clipPath>
   </defs>
   <rect x="0.5" y="0.5" width="495" height="167" rx="12" fill="#211E1E" stroke="#3A3535"/>
   <rect x="0.5" y="0.5" width="495" height="167" rx="12" fill="url(#glow)"/>
+  <defs><clipPath id="logo"><rect x="20" y="20" width="48" height="48" rx="12"/></clipPath></defs>
   <image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJLaWRhIFVJIj4KICA8dGl0bGU+S2lkYSBVSTwvdGl0bGU+CiAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzViM2RmNSIgLz4KICA8IS0tIEEgImsiIHdob3NlIGFybXMgdHJhaWwgb2ZmLCB0aGUgd2F5IGEgcmV2ZWFsIHNldHRsZXMuIC0tPgogIDxwYXRoCiAgICBkPSJNMTEgN3YxOE0xMSAxNy41IDE5IDEwTTExIDE3LjUgMTkgMjUiCiAgICBzdHJva2U9IiNmZmYiCiAgICBzdHJva2Utd2lkdGg9IjMiCiAgICBzdHJva2UtbGluZWNhcD0icm91bmQiCiAgICBmaWxsPSJub25lIgogIC8+Cjwvc3ZnPgo=" x="20" y="20" width="48" height="48" clip-path="url(#logo)"/>
   <text x="82" y="41" font-size="20" font-weight="600" fill="#CFCECD">kida-ui</text>
   <circle cx="86" cy="58" r="4" fill="#3178c6"/>
