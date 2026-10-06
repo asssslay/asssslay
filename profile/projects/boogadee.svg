@@ -15,7 +15,7 @@
   <text x="96" y="62" font-size="12" fill="#656363">Next.js · Supabase · Leaflet</text>
   <text x="20" y="98" font-size="13.5" fill="#8F8B8A">Childcare search and waitlist platform for families and</text>
   <text x="20" y="118" font-size="13.5" fill="#8F8B8A">providers, built with React, TypeScript and Tailwind CSS.</text>
-  <rect x="20" y="132" width="129.2" height="24" rx="12" fill="#2C2828"/>
+  <rect x="20" y="132" width="126" height="24" rx="12" fill="#2C2828"/>
   <g transform="translate(30,137) scale(0.58)" fill="none" stroke="#CFCECD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></g>
   <text x="49" y="148" font-size="12" font-weight="600" fill="#CFCECD">boogadee.com</text>
   <text x="476" y="148" text-anchor="end" font-size="12" font-weight="600" fill="#F7C8A5">Live website</text>

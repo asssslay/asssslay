@@ -26,13 +26,14 @@ jobs:
 
       - name: Generate profile cards
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Add a PROFILE_TOKEN secret to include private contributions in the activity banner.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
         run: node profile/generate-profile.mjs
 
       - name: Commit profile cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/buttons profile/contrib profile/experience profile/projects profile/stack
+          git add profile/activity profile/buttons profile/contrib profile/experience profile/projects profile/stack
           git commit -m "Update profile cards [skip ci]" || exit 0
           git push

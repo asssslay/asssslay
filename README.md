@@ -106,12 +106,9 @@ Ruslana Avramova · from Ukraine 🇺🇦 · 3+ years of experience
 
 ---
 
-## GitHub Stats
+## GitHub Activity
 
-<p>
-<img src="./profile/streak.svg" alt="GitHub streak statistics" width="49.5%" />
-<img src="https://github-stats-extended.vercel.app/api?username=asssslay&show_icons=true&bg_color=211E1E&title_color=CFCECD&text_color=656363&icon_color=F4C2D7&ring_color=F4C2D7&hide_border=true&include_all_commits=true&disable_animations=true" alt="GitHub stats" width="49.5%" />
-</p>
+<img src="./profile/activity/banner.svg" alt="GitHub contribution activity over the last year" width="100%" />
 
 <details>
 <summary><b>About me</b></summary>
