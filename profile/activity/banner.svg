@@ -389,6 +389,7 @@
   <rect x="961" y="166" width="14" height="14" rx="3" fill="#2C2828"/>
   <rect x="961" y="184" width="14" height="14" rx="3" fill="#f4c2d7"/>
   <rect x="961" y="202" width="14" height="14" rx="3" fill="#2C2828"/>
+  <rect x="961" y="220" width="14" height="14" rx="3" fill="#2C2828"/>
   <circle cx="29" cy="258" r="4" fill="#F4C2D7"/>
   <text x="40" y="263" font-size="12" fill="#8F8B8A">Most active in <tspan font-weight="600" fill="#CFCECD">March 2026</tspan> · 262 contributions</text>
   <text x="854" y="263" text-anchor="end" font-size="12" fill="#656363">Less</text>
