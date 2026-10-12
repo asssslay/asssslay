@@ -18,6 +18,10 @@ Ruslana Avramova · from Ukraine 🇺🇦 · 3+ years of experience
 ## Experience
 
 <p>
+<a href="https://boogadee.com/"><img src="./profile/experience/boogadee.svg" alt="Boogadee: Frontend Developer, working on the ongoing project for two years" width="100%" /></a>
+</p>
+
+<p>
 <a href="https://www.upwork.com/freelancers/~01c286c87cffa25dbf"><img src="./profile/experience/upwork.svg" alt="Upwork: Freelance Frontend Developer, Jun 2024 to now" width="50%" /></a><img src="./profile/experience/education.svg" alt="Odesa National Polytechnic University: Computer Science degree with honors, 2022 to 2026" width="50%" />
 </p>
 
