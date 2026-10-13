@@ -40,6 +40,9 @@ const EXPERIENCE = [
     role: "Frontend Developer",
     dates: "2 years · Ongoing",
     logo: "boogadee.svg",
+    logoFit: true,
+    logoWidth: 120,
+    logoHeight: 26,
     accent: ACCENT.peach,
     description: "Working on Boogadee for two years: a childcare search and waitlist platform for families and providers.",
   },
@@ -245,15 +248,16 @@ const DIVIDER_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="3
 `;
 
 /* ---------- Experience ---------- */
-function experienceCardSvg({ company, role, dates, logo, logoFit, accent, description, gutter, wide = false }) {
+function experienceCardSvg({ company, role, dates, logo, logoFit, logoWidth = 40, logoHeight = 40, accent, description, gutter, wide = false }) {
   const width = wide ? 1012 : 496;
   const height = 124;
+  const textX = 20 + logoWidth + 14;
   const descSvg = wrapDescription(description)
     .map((line, i) => `<text x="20" y="${92 + i * 19}" font-size="13" fill="${THEME.body}">${escapeXml(line)}</text>`)
     .join("\n  ");
-  // Crest-shaped logos keep their outline instead of being cropped to a tile.
+  // Crests and wordmarks keep their proportions instead of being cropped to a tile.
   const logoSvg = logoFit
-    ? `<image href="${logoDataUri(logo)}" x="20" y="20" width="40" height="40" preserveAspectRatio="xMidYMid meet"/>`
+    ? `<image href="${logoDataUri(logo)}" x="20" y="${20 + (40 - logoHeight) / 2}" width="${logoWidth}" height="${logoHeight}" preserveAspectRatio="xMidYMid meet"/>`
     : `<image href="${logoDataUri(logo)}" x="20" y="20" width="40" height="40" clip-path="url(#logo)"/>`;
   return svgDoc({
     width,
@@ -263,9 +267,9 @@ function experienceCardSvg({ company, role, dates, logo, logoFit, accent, descri
     body: `${glowCard(width, height, accent)}
   <defs><clipPath id="logo"><rect x="20" y="20" width="40" height="40" rx="10"/></clipPath></defs>
   ${logoSvg}
-  <text x="74" y="36" font-size="16" font-weight="600" fill="${THEME.title}">${escapeXml(company)}</text>
+  <text x="${textX}" y="36" font-size="16" font-weight="600" fill="${THEME.title}">${escapeXml(company)}</text>
   <text x="${width - 20}" y="36" text-anchor="end" font-size="12" font-weight="600" fill="${accent}">${escapeXml(dates)}</text>
-  <text x="74" y="56" font-size="13" fill="${THEME.body}">${escapeXml(role)}</text>
+  <text x="${textX}" y="56" font-size="13" fill="${THEME.body}">${escapeXml(role)}</text>
   ${descSvg}`,
   });
 }
