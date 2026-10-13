@@ -112,19 +112,3 @@ Ruslana Avramova · from Ukraine 🇺🇦 · 3+ years of experience
 ## GitHub Activity
 
 <img src="./profile/activity/banner.svg" alt="GitHub contribution activity over the last year" width="100%" />
-
-<details>
-<summary><b>About me</b></summary>
-<br>
-
-Hi, I'm Ruslana! 👩🏻‍💻 I'm a frontend developer with a Computer Science degree with honors
-and over three years of experience building modern web interfaces.
-
-- Currently working with **React and TypeScript**
-- Creating responsive websites in **Framer and Webflow**
-- Interested in polished interfaces, animations and product design
-- Open to freelance projects and collaborations
-
-**Languages:** English (fluent) · Ukrainian and Russian (native)
-
-</details>
