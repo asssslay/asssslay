@@ -1,7 +1,7 @@
 <h1 align="center"><b>Frontend TypeScript Developer</b></h1>
 
 <p align="center">
-Ruslana Avramova · from Ukraine 🇺🇦 · 3+ years of experience
+Ruslana Avramova · from Ukraine 🇺🇦 · 5+ years of experience
 </p>
 
 <p align="center">
