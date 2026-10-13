@@ -98,7 +98,7 @@ Ruslana Avramova · from Ukraine 🇺🇦 · 5+ years of experience
 ## Projects
 
 <p>
-<a href="https://boogadee.com/"><img src="./profile/projects/boogadee.svg" alt="Boogadee: childcare search and waitlist platform for families and providers" width="50%" /></a><a href="https://github.com/asssslay/kida-ui"><img src="./profile/projects/kida-ui.svg" alt="kida-ui: animation-first UI components, built to reach every stack" width="50%" /></a>
+<a href="https://github.com/asssslay/kida-ui"><img src="./profile/projects/kida-ui.svg" alt="kida-ui: animation-first UI components, built to reach every stack" width="50%" /></a><a href="https://github.com/asssslay/UniCommunity"><img src="./profile/projects/unicommunity.svg" alt="UniCommunity: university community platform with news, events, discussions, personal notes and deadline tracking" width="50%" /></a>
 </p>
 
 ## Contributed to

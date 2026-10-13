@@ -34,6 +34,16 @@ const ICON_BUTTONS = [
 
 const EXPERIENCE = [
   {
+    slug: "boogadee",
+    wide: true,
+    company: "Boogadee",
+    role: "Frontend Developer",
+    dates: "2 years · Ongoing",
+    logo: "boogadee.svg",
+    accent: ACCENT.peach,
+    description: "Working on Boogadee for two years: a childcare search and waitlist platform for families and providers.",
+  },
+  {
     slug: "upwork",
     gutter: "right",
     company: "Upwork",
@@ -70,19 +80,8 @@ const FEATURED_STACK = ["typescript", "react", "tanstack", "tailwind", "framer",
 // `repo` cards pull their language from GitHub; the rest are static.
 const PROJECTS = [
   {
-    slug: "boogadee",
-    gutter: "right",
-    name: "Boogadee",
-    logo: "boogadee.svg",
-    accent: ACCENT.peach,
-    meta: "Next.js · Supabase · Leaflet",
-    description: "Childcare search and waitlist platform for families and providers, built with React, TypeScript and Tailwind CSS.",
-    pill: { label: "boogadee.com", icon: "globe" },
-    note: "Live website",
-  },
-  {
     slug: "kida-ui",
-    gutter: "left",
+    gutter: "right",
     repo: "kida-ui",
     logo: "kida-ui.svg",
     accent: ACCENT.pink,
@@ -90,6 +89,16 @@ const PROJECTS = [
       "Animation-first UI components, built to reach every stack: a framework-agnostic motion engine, shared CSS and React components.",
     pill: { label: "asssslay/kida-ui", icon: "github" },
     note: "Open source · pre-alpha",
+  },
+  {
+    slug: "unicommunity",
+    gutter: "left",
+    repo: "UniCommunity",
+    logo: "unicommunity.svg",
+    accent: ACCENT.lavender,
+    description: "University community platform with news, events, discussions, personal notes and deadline tracking for students.",
+    pill: { label: "asssslay/UniCommunity", icon: "github" },
+    note: "Student platform",
   },
 ];
 
@@ -236,8 +245,8 @@ const DIVIDER_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="3
 `;
 
 /* ---------- Experience ---------- */
-function experienceCardSvg({ company, role, dates, logo, logoFit, accent, description, gutter }) {
-  const width = 496;
+function experienceCardSvg({ company, role, dates, logo, logoFit, accent, description, gutter, wide = false }) {
+  const width = wide ? 1012 : 496;
   const height = 124;
   const descSvg = wrapDescription(description)
     .map((line, i) => `<text x="20" y="${92 + i * 19}" font-size="13" fill="${THEME.body}">${escapeXml(line)}</text>`)
@@ -255,7 +264,7 @@ function experienceCardSvg({ company, role, dates, logo, logoFit, accent, descri
   <defs><clipPath id="logo"><rect x="20" y="20" width="40" height="40" rx="10"/></clipPath></defs>
   ${logoSvg}
   <text x="74" y="36" font-size="16" font-weight="600" fill="${THEME.title}">${escapeXml(company)}</text>
-  <text x="476" y="36" text-anchor="end" font-size="12" font-weight="600" fill="${accent}">${escapeXml(dates)}</text>
+  <text x="${width - 20}" y="36" text-anchor="end" font-size="12" font-weight="600" fill="${accent}">${escapeXml(dates)}</text>
   <text x="74" y="56" font-size="13" fill="${THEME.body}">${escapeXml(role)}</text>
   ${descSvg}`,
   });
