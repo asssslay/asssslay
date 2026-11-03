@@ -105,7 +105,12 @@ const PROJECTS = [
   },
 ];
 
-const CONTRIBUTIONS = [{ owner: "Emanuele-web04", repo: "synara", logo: "synara.png", wide: true }];
+// Shown three to a row in the README, newest first. Cards without a logo use the owner's avatar.
+const CONTRIBUTIONS = [
+  { owner: "Effect-TS", repo: "effect" },
+  { owner: "chakra-ui", repo: "zag" },
+  { owner: "Emanuele-web04", repo: "synara", logo: "synara.png" },
+];
 
 const LANG_COLORS = {
   TypeScript: "#3178c6",
@@ -367,32 +372,42 @@ async function avatarDataUri(owner) {
   return `data:${res.headers.get("content-type")};base64,${buf.toString("base64")}`;
 }
 
-async function fetchContribution({ owner, repo, logo, wide = false }) {
+async function fetchContribution({ owner, repo, logo }, index) {
   const [merged, image] = await Promise.all([
     gh(`search/issues?q=${encodeURIComponent(`repo:${owner}/${repo} author:${OWNER} is:pr is:merged`)}`).then(
       (prs) => prs.total_count
     ),
     logo ? logoDataUri(logo) : avatarDataUri(owner),
   ]);
-  return { fullName: `${owner}/${repo}`, merged, image, wide };
+  return { owner, repo, merged, image, column: index % CONTRIB_PER_ROW };
 }
 
-function contributionCardSvg({ fullName, merged, image, wide }) {
-  const [owner, repo] = fullName.split("/");
-  const width = wide ? 482 : 320;
-  const height = 72;
-  const prLabel = `${merged} merged PR${merged === 1 ? "" : "s"}`;
+// Every card file is the same width so the README can show them at an equal percentage.
+// The visible card is narrower and shifted by column, which leaves equal gaps between cards.
+const CONTRIB_PER_ROW = 3;
+const CONTRIB_WIDTH = 340;
+const CONTRIB_GAP = 21;
+
+function contributionCardSvg({ owner, repo, merged, image, column }) {
+  const cardWidth = CONTRIB_WIDTH - (CONTRIB_GAP * (CONTRIB_PER_ROW - 1)) / CONTRIB_PER_ROW;
+  const x = (column * CONTRIB_GAP) / CONTRIB_PER_ROW;
+  const height = 80;
+  const right = x + cardWidth - 18;
+  const prLabel = `merged PR${merged === 1 ? "" : "s"}`;
+  const labelWidth = textWidth(prLabel, 12);
   return svgDoc({
-    width,
+    width: CONTRIB_WIDTH,
     height,
-    label: `${fullName}: ${prLabel}`,
-    body: `<defs><clipPath id="logo"><rect x="16" y="16" width="40" height="40" rx="8"/></clipPath></defs>
-  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="10" fill="${THEME.bg}" stroke="${THEME.border}"/>
-  <rect x="0.5" y="18" width="3" height="${height - 36}" rx="1.5" fill="${ACCENT.pink}"/>
-  <image href="${image}" x="16" y="16" width="40" height="40" clip-path="url(#logo)"/>
-  <text x="68" y="33" font-size="15"><tspan fill="${THEME.text}">${escapeXml(owner)}/</tspan><tspan font-weight="600" fill="${THEME.title}">${escapeXml(repo)}</tspan></text>
-  <g transform="translate(68,43) scale(0.5)" fill="none" stroke="${ACCENT.pink}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${MERGE_PATHS}</g>
-  <text x="84" y="53" font-size="12" fill="${THEME.title}">${prLabel}</text>`,
+    label: `${owner}/${repo}: ${merged} ${prLabel}`,
+    body: `<defs><clipPath id="logo"><rect x="${x + 16}" y="20" width="40" height="40" rx="8"/></clipPath></defs>
+  <rect x="${x + 0.5}" y="0.5" width="${cardWidth - 1}" height="${height - 1}" rx="10" fill="${THEME.bg}" stroke="${THEME.border}"/>
+  <rect x="${x + 0.5}" y="22" width="3" height="${height - 44}" rx="1.5" fill="${ACCENT.pink}"/>
+  <image href="${image}" x="${x + 16}" y="20" width="40" height="40" clip-path="url(#logo)"/>
+  <text x="${x + 68}" y="36" font-size="13" fill="${THEME.text}">${escapeXml(owner)}/</text>
+  <text x="${x + 68}" y="56" font-size="16" font-weight="600" fill="${THEME.title}">${escapeXml(repo)}</text>
+  <text x="${right}" y="44" text-anchor="end" font-size="30" font-weight="700" fill="${ACCENT.pink}">${merged.toLocaleString("en-US")}</text>
+  <g transform="translate(${right - labelWidth - 19},52) scale(0.5)" fill="none" stroke="${ACCENT.pink}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${MERGE_PATHS}</g>
+  <text x="${right}" y="62" text-anchor="end" font-size="12" fill="${THEME.body}">${prLabel}</text>`,
   });
 }
 
@@ -547,7 +562,7 @@ console.log(`Generated ${projects.length} project cards`);
 const contributions = await Promise.all(CONTRIBUTIONS.map(fetchContribution));
 const contribDir = outDir("contrib");
 for (const data of contributions) {
-  writeFileSync(contribDir + data.fullName.toLowerCase().replace("/", "-") + ".svg", contributionCardSvg(data));
+  writeFileSync(`${contribDir}${data.owner.toLowerCase()}-${data.repo.toLowerCase()}.svg`, contributionCardSvg(data));
 }
 console.log(`Generated ${contributions.length} contribution cards`);
 

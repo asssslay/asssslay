@@ -104,7 +104,7 @@ Ruslana Avramova · from Ukraine 🇺🇦 · 5+ years of experience
 ## Contributed to
 
 <p>
-<a href="https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/emanuele-web04-synara.svg" alt="Emanuele-web04/synara" width="49%" /></a>
+<a href="https://github.com/Effect-TS/effect/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/effect-ts-effect.svg" alt="Effect-TS/effect" width="33.33%" /></a><a href="https://github.com/chakra-ui/zag/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/chakra-ui-zag.svg" alt="chakra-ui/zag" width="33.33%" /></a><a href="https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/emanuele-web04-synara.svg" alt="Emanuele-web04/synara" width="33.33%" /></a>
 </p>
 
 ---
