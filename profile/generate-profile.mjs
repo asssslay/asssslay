@@ -105,9 +105,10 @@ const PROJECTS = [
   },
 ];
 
-// Shown three to a row in the README, newest first. Cards without a logo use the owner's avatar.
+// Shown two to a row in the README, newest first. Cards without a logo use the owner's avatar.
 const CONTRIBUTIONS = [
   { owner: "Effect-TS", repo: "effect" },
+  { owner: "adaltas", repo: "node-csv" },
   { owner: "chakra-ui", repo: "zag" },
   { owner: "Emanuele-web04", repo: "synara", logo: "synara.png" },
 ];
@@ -384,9 +385,10 @@ async function fetchContribution({ owner, repo, logo }, index) {
 
 // Every card file is the same width so the README can show them at an equal percentage.
 // The visible card is narrower and shifted by column, which leaves equal gaps between cards.
-const CONTRIB_PER_ROW = 3;
-const CONTRIB_WIDTH = 340;
-const CONTRIB_GAP = 21;
+// Matches the paired project cards: 496px cards with a 20px gap.
+const CONTRIB_PER_ROW = 2;
+const CONTRIB_WIDTH = 506;
+const CONTRIB_GAP = 20;
 
 function contributionCardSvg({ owner, repo, merged, image, column }) {
   const cardWidth = CONTRIB_WIDTH - (CONTRIB_GAP * (CONTRIB_PER_ROW - 1)) / CONTRIB_PER_ROW;
