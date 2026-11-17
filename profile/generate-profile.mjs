@@ -385,10 +385,11 @@ async function fetchContribution({ owner, repo, logo }, index) {
 
 // Every card file is the same width so the README can show them at an equal percentage.
 // The visible card is narrower and shifted by column, which leaves equal gaps between cards.
-// Matches the paired project cards: 496px cards with a 20px gap.
+// Cards stay 326x80 (the original three-per-row size). Shown at 50% width, the 14px gap
+// lines up with the gap between the project cards.
 const CONTRIB_PER_ROW = 2;
-const CONTRIB_WIDTH = 506;
-const CONTRIB_GAP = 20;
+const CONTRIB_WIDTH = 333;
+const CONTRIB_GAP = 14;
 
 function contributionCardSvg({ owner, repo, merged, image, column }) {
   const cardWidth = CONTRIB_WIDTH - (CONTRIB_GAP * (CONTRIB_PER_ROW - 1)) / CONTRIB_PER_ROW;
