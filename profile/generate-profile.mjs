@@ -385,15 +385,17 @@ async function fetchContribution({ owner, repo, logo }, index) {
 
 // Every card file is the same width so the README can show them at an equal percentage.
 // The visible card is narrower and shifted by column, which leaves equal gaps between cards.
-// Cards stay 326x80 (the original three-per-row size). Shown at 50% width, the 14px gap
-// lines up with the gap between the project cards.
+// Each card file is sized as one third of the row (shown at 33.33% width in the README),
+// but rows hold only two cards, so the cards keep their original size and a third of the
+// row stays empty. The visible card is shifted by column to leave equal gaps between cards.
 const CONTRIB_PER_ROW = 2;
-const CONTRIB_WIDTH = 333;
-const CONTRIB_GAP = 14;
+const CONTRIB_COLUMNS = 3;
+const CONTRIB_WIDTH = 340;
+const CONTRIB_GAP = 21;
 
 function contributionCardSvg({ owner, repo, merged, image, column }) {
-  const cardWidth = CONTRIB_WIDTH - (CONTRIB_GAP * (CONTRIB_PER_ROW - 1)) / CONTRIB_PER_ROW;
-  const x = (column * CONTRIB_GAP) / CONTRIB_PER_ROW;
+  const cardWidth = CONTRIB_WIDTH - (CONTRIB_GAP * (CONTRIB_COLUMNS - 1)) / CONTRIB_COLUMNS;
+  const x = (column * CONTRIB_GAP) / CONTRIB_COLUMNS;
   const height = 80;
   const right = x + cardWidth - 18;
   const prLabel = `merged PR${merged === 1 ? "" : "s"}`;
