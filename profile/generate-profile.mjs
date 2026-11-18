@@ -107,6 +107,7 @@ const PROJECTS = [
 
 // Shown two to a row in the README, newest first. Cards without a logo use the owner's avatar.
 const CONTRIBUTIONS = [
+  { owner: "dcastil", repo: "tailwind-merge" },
   { owner: "Effect-TS", repo: "effect" },
   { owner: "adaltas", repo: "node-csv" },
   { owner: "chakra-ui", repo: "zag" },
