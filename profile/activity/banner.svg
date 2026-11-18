@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="284" viewBox="0 0 1000 284" role="img" aria-label="772 contributions in the last year, 1038 commits, 142 merged pull requests, 137 active days. Most active in March 2026.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="284" viewBox="0 0 1000 284" role="img" aria-label="772 contributions in the last year, 1038 commits, 143 merged pull requests, 137 active days. Most active in March 2026.">
   <style>text { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }</style>
   <defs>
     <radialGradient id="glow" cx="1" cy="0" r="0.6">
@@ -12,7 +12,7 @@
   <text x="24" y="66" font-size="12" fill="#656363">Nov 2025 – Nov 2026</text>
   <text x="976" y="48" text-anchor="end" font-size="26" font-weight="700" fill="#CFCECD">137</text>
   <text x="976" y="68" text-anchor="end" font-size="12" fill="#656363">active days</text>
-  <text x="868" y="48" text-anchor="end" font-size="26" font-weight="700" fill="#CFCECD">142</text>
+  <text x="868" y="48" text-anchor="end" font-size="26" font-weight="700" fill="#CFCECD">143</text>
   <text x="868" y="68" text-anchor="end" font-size="12" fill="#656363">merged pull requests</text>
   <text x="718" y="48" text-anchor="end" font-size="26" font-weight="700" fill="#CFCECD">1,038</text>
   <text x="718" y="68" text-anchor="end" font-size="12" fill="#656363">commits</text>
