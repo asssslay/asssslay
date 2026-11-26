@@ -105,14 +105,15 @@ const PROJECTS = [
   },
 ];
 
-// Shown two to a row in the README, newest first. Cards without a logo use the owner's avatar.
+// Shown three to a row in the README: Effect, t3code and tailwind-merge first, then the rest
+// by merged PR count. Cards without a logo use the owner's avatar.
 const CONTRIBUTIONS = [
+  { owner: "Effect-TS", repo: "effect" },
   { owner: "pingdotgg", repo: "t3code" },
   { owner: "dcastil", repo: "tailwind-merge" },
-  { owner: "Effect-TS", repo: "effect" },
   { owner: "adaltas", repo: "node-csv" },
-  { owner: "chakra-ui", repo: "zag" },
   { owner: "Emanuele-web04", repo: "synara", logo: "synara.png" },
+  { owner: "chakra-ui", repo: "zag" },
 ];
 
 const LANG_COLORS = {
@@ -401,10 +402,9 @@ async function fetchContribution({ owner, repo, logo }, index) {
 
 // Every card file is the same width so the README can show them at an equal percentage.
 // The visible card is narrower and shifted by column, which leaves equal gaps between cards.
-// Each card file is sized as one third of the row (shown at 33.33% width in the README),
-// but rows hold only two cards, so the cards keep their original size and a third of the
-// row stays empty. The visible card is shifted by column to leave equal gaps between cards.
-const CONTRIB_PER_ROW = 2;
+// Each card file is one third of the row (shown at 33.33% width in the README). The visible
+// card is shifted by column to leave equal gaps between cards.
+const CONTRIB_PER_ROW = 3;
 const CONTRIB_COLUMNS = 3;
 const CONTRIB_WIDTH = 340;
 const CONTRIB_GAP = 21;
