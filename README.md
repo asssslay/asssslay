@@ -104,15 +104,15 @@ Ruslana Avramova · from Ukraine 🇺🇦 · 5+ years of experience
 ## Contributed to
 
 <p>
-<a href="https://github.com/dcastil/tailwind-merge/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/dcastil-tailwind-merge.svg" alt="dcastil/tailwind-merge" width="33.33%" /></a><a href="https://github.com/Effect-TS/effect/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/effect-ts-effect.svg" alt="Effect-TS/effect" width="33.33%" /></a>
+<a href="https://github.com/search?q=repo%3Apingdotgg%2Ft3code+%22Co-authored-by%3A+asssslay%22&type=commits"><img src="./profile/contrib/pingdotgg-t3code.svg" alt="pingdotgg/t3code" width="33.33%" /></a><a href="https://github.com/dcastil/tailwind-merge/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/dcastil-tailwind-merge.svg" alt="dcastil/tailwind-merge" width="33.33%" /></a>
 </p>
 
 <p>
-<a href="https://github.com/adaltas/node-csv/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/adaltas-node-csv.svg" alt="adaltas/node-csv" width="33.33%" /></a><a href="https://github.com/chakra-ui/zag/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/chakra-ui-zag.svg" alt="chakra-ui/zag" width="33.33%" /></a>
+<a href="https://github.com/Effect-TS/effect/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/effect-ts-effect.svg" alt="Effect-TS/effect" width="33.33%" /></a><a href="https://github.com/adaltas/node-csv/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/adaltas-node-csv.svg" alt="adaltas/node-csv" width="33.33%" /></a>
 </p>
 
 <p>
-<a href="https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/emanuele-web04-synara.svg" alt="Emanuele-web04/synara" width="33.33%" /></a>
+<a href="https://github.com/chakra-ui/zag/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/chakra-ui-zag.svg" alt="chakra-ui/zag" width="33.33%" /></a><a href="https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+author%3Aasssslay+is%3Amerged"><img src="./profile/contrib/emanuele-web04-synara.svg" alt="Emanuele-web04/synara" width="33.33%" /></a>
 </p>
 
 ---

@@ -107,6 +107,7 @@ const PROJECTS = [
 
 // Shown two to a row in the README, newest first. Cards without a logo use the owner's avatar.
 const CONTRIBUTIONS = [
+  { owner: "pingdotgg", repo: "t3code" },
   { owner: "dcastil", repo: "tailwind-merge" },
   { owner: "Effect-TS", repo: "effect" },
   { owner: "adaltas", repo: "node-csv" },
@@ -374,11 +375,25 @@ async function avatarDataUri(owner) {
   return `data:${res.headers.get("content-type")};base64,${buf.toString("base64")}`;
 }
 
+// Merged PRs opened by OWNER, plus merged PRs opened by someone else where OWNER is a
+// co-author (found through the "Co-authored-by" trailer on the squashed commit).
+async function countMergedPrs(owner, repo) {
+  const q = (query) => encodeURIComponent(`repo:${owner}/${repo} ${query}`);
+  const [authored, coauthored] = await Promise.all([
+    gh(`search/issues?per_page=100&q=${q(`author:${OWNER} is:pr is:merged`)}`),
+    gh(`search/commits?per_page=100&q=${q(`"Co-authored-by: ${OWNER}"`)}`),
+  ]);
+  const prs = new Set(authored.items.map((pr) => `#${pr.number}`));
+  for (const { sha, commit } of coauthored.items) {
+    const title = commit.message.split("\n")[0];
+    prs.add(title.match(/\(#(\d+)\)$/)?.[0].slice(1, -1) ?? sha);
+  }
+  return prs.size;
+}
+
 async function fetchContribution({ owner, repo, logo }, index) {
   const [merged, image] = await Promise.all([
-    gh(`search/issues?q=${encodeURIComponent(`repo:${owner}/${repo} author:${OWNER} is:pr is:merged`)}`).then(
-      (prs) => prs.total_count
-    ),
+    countMergedPrs(owner, repo),
     logo ? logoDataUri(logo) : avatarDataUri(owner),
   ]);
   return { owner, repo, merged, image, column: index % CONTRIB_PER_ROW };
